@@ -1,0 +1,12 @@
+# first repeating character in a string 
+
+def repeat(s):
+	array=[]
+	for i in s:
+		if i in array:
+			return i
+		else:
+			array.append(i)
+	return -1
+s=input()
+print(repeat(s))
