@@ -1,0 +1,23 @@
+# uncommon characters in the two given strings
+
+def uncommon(A,B):
+    A=set(list(A))
+    B=set(list(B))
+    string1=A.difference(B)
+    string2=B.difference(A)
+    string=''.join((list(string1)+list(string2)))
+    string=list(string)
+    string.sort()
+    if len(string)>0:
+        return ''.join(string)
+    else:
+        return -1
+A=input()
+B=input()
+print(uncommon(A,B))
+
+'''
+A=geeksforgeeks
+B=geeksquiz
+
+'''
