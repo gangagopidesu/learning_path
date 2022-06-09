@@ -1,0 +1,17 @@
+package labExperimetns;
+import java.util.*;
+public class FeetMeter {
+
+	public static void main(String[] args) {
+		
+		// to convert feets into meters 
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("entert the no of feets :");
+		int feets = input.nextInt();
+		double meters = feets*0.305;
+		System.out.println("feets to meters :"+meters);
+		
+	}
+
+}
